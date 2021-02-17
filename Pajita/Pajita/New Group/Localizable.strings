@@ -1,0 +1,269 @@
+/* 
+  Localizeable.";strings
+  Pajita
+
+  Created by Zain Ali on 22/01/2020.";
+  Copyright © 2020 Zain Ali."; All rights reserved.";
+*/
+
+"internet_en" = "Internet Connection Problem. Please check your Wifi or Data network.";
+"internet_fr" = "Problème de connexion Internet. Veuillez vérifier votre réseau Wifi ou Data.";
+
+"wrong_en" = "Something went wrong. Please try again.";
+"wrong_fr" = "Quelque chose a mal tourné. Veuillez réessayer.";
+
+"holiday_en" = "Today is holiday.";
+"holiday_fr" = "Aujourd'hui c'est les vacances.";
+
+"enter_email_en" = "Please enter your email.";
+"enter_email_fr" = "Veuillez saisir votre email.";
+
+"valid_email_en" = "Please enter a valid email address.";
+"valid_email_fr" = "S'il vous plaît, mettez une adresse email valide.";
+
+"enter_password_en" = "Please enter your password.";
+"enter_password_fr" = "S'il vous plait entrez votre mot de passe.";
+
+"invalid_email_en" = "Invalid email or password.";
+"invalid_email_fr" = "Email ou mot de passe invalide.";
+
+"leaves_en" = "Ask for leaves";
+"leaves_fr" = "Demandez des absences";
+
+"training_en" = "Add a training";
+"training_fr" = "Ajouter une formation";
+
+"expense_en" = "Add new expense";
+"expense_fr" = "Ajouter de nouvelles dépenses";
+
+"Cancel_en" = "Cancel";
+"Cancel_fr" = "Annuler";
+
+"Done_en" = "Done";
+"Done_fr" = "Terminé";
+
+"Pending_en" = "Pending";
+"Pending_fr" = "En attente";
+
+"Approved_en" = "Approved";
+"Approved_fr" = "Approuvée";
+
+"Submitted_en" = "Submitted";
+"Submitted_fr" = "Soumis";
+
+"Refused_en" = "Refused";
+"Refused_fr" = "Refusé";
+
+"Cancelled_en" = "Cancelled";
+"Cancelled_fr" = "Annulé";
+
+"balance_en" = "Leave balance";
+"balance_fr" = "Solde congé";
+
+"Timesheetu_en" = "Timesheet is updated successfully.";
+"Timesheetu_fr" = "Timesheet a été mise à jour avec succès.";
+
+"Timesheetv_en" = "Timesheet is validated successfully.";
+"Timesheetv_fr" = "Timesheet est validée avec succès.";
+
+"Timesheet_en" = "Timesheet";
+"Timesheet_fr" = "Timesheet";
+
+"Camera_en" = "Camera";
+"Camera_fr" = "Caméra";
+
+"Gallery_en" = "Photo Gallery";
+"Gallery_fr" = "Galerie de photos";
+
+"select_country_en" = "Please select country.";
+"select_country_fr" = "Veuillez sélectionner un pays.";
+
+"select_category_en" = "Please select category.";
+"select_category_fr" = "Veuillez sélectionner une catégorie.";
+
+"select_mission_en" = "Please select mission.";
+"select_mission_fr" = "Veuillez sélectionner une mission.";
+
+"select_date_en" = "Please select date.";
+"select_date_fr" = "Veuillez sélectionner la date.";
+
+"enter_amount_en" = "Please enter amount.";
+"enter_amount_fr" = "Veuillez saisir le montant.";
+
+"enter_expense_en" = "Please enter expense description.";
+"enter_expense_fr" = "Veuillez saisir la description des dépenses.";
+
+"attach_file_en" = "Please attach file with expense.";
+"attach_file_fr" = "Veuillez joindre un fichier avec frais.";
+
+"expense_added_en" = "Expense added successfully.";
+"expense_added_fr" = "Dépense ajoutée avec succès.";
+
+"Annual_Leave_en" = "Annual Leave";
+"Annual_Leave_fr" = "Absence annuel";
+
+"annual_leave_en" = "Annual Leave";
+"annual_leave_fr" = "Absence annuel";
+
+"Extra_Leave_en" = "Extra Leave";
+"Extra_Leave_fr" = "Absence supplémentaire";
+
+"extra_leave_en" = "Extra Leave";
+"extra_leave_fr" = "Absence supplémentaire";
+
+"Sickness_Leave_en" = "Sickness Leave";
+"Sickness_Leave_fr" = "Absence de maladie";
+
+"sickness_leave_en" = "Sickness Leave";
+"sickness_leave_fr" = "Absence de maladie";
+
+"familial_leave_en" = "Familial Leave";
+"familial_leave_fr" = "Absence familial";
+
+"formation_leave_en" = "Formation Leave";
+"formation_leave_fr" = "Absence de formation";
+
+"parental_leave_en" = "Parental Leave";
+"parental_leave_fr" = "Absence parental";
+
+"maternal_leave_en" = "Maternal Leave";
+"maternal_leave_fr" = "Absence maternité";
+
+"exceptional_leave_en" = "Exceptional leave";
+"exceptional_leave_fr" = "Absence exceptionnel";
+
+"following_leave_en" = "Following Leave";
+"following_leave_fr" = "Après le absence";
+
+"individual_leave_en" = "Individual Leave";
+"individual_leave_fr" = "Absence individuel";
+
+"free_leave_en" = "Free Leave";
+"free_leave_fr" = "Absence gratuit";
+
+"welcome_leave_en" = "Welcome Leave";
+"welcome_leave_fr" = "Absence de bienvenue";
+
+
+"start_first_en" = "Please select start date first.";
+"start_first_fr" = "Veuillez d'abord sélectionner la date de début.";
+
+"select_year_en" = "Please select year.";
+"select_year_fr" = "Veuillez sélectionner l'année.";
+
+"leave_type_en" = "Please select leave type.";
+"leave_type_fr" = "Veuillez sélectionner le type de Absence.";
+
+"start_en" = "Please select start date.";
+"start_fr" = "Veuillez sélectionner la date de début.";
+
+"end_en" = "Please select end date.";
+"end_fr" = "Veuillez sélectionner la date de fin.";
+
+"title_en" = "Please enter title.";
+"title_fr" = "Veuillez entrer le titre.";
+
+"leave_added_en" = "Leave added successfully.";
+"leave_added_fr" = "Absence ajouté avec succès.";
+
+"signature_en" = "Please add your signature.";
+"signature_fr" = "Veuillez ajouter votre signature.";
+
+"Draft_en" = "Draft";
+"Draft_fr" = "Brouillon";
+
+"from_en" = "Leaves from";
+"from_fr" = "Absence du";
+
+"to_en" = "to";
+"to_fr" = "au";
+
+"total_en" = "Total Hours";
+"total_fr" = "Heures totales";
+
+"total_expense_en" = "Nb Expense";
+"total_expense_fr" = "Nb note de frais";
+
+"Requested_en" = "Requested";
+"Requested_fr" = "Demandée";
+
+"Valided_en" = "Valided";
+"Valided_fr" = "Validée";
+
+"Employee_en" = "Employee";
+"Employee_fr" = "Collaborateur";
+
+"1_en" = "January";
+"1_fr" = "janvier";
+
+"2_en" = "February";
+"2_fr" = "février";
+
+"3_en" = "March";
+"3_fr" = "mars";
+
+"4_en" = "April";
+"4_fr" = "avril";
+
+"5_en" = "May";
+"5_fr" = "mai";
+
+"6_en" = "June";
+"6_fr" = "juin";
+
+"7_en" = "July";
+"7_fr" = "juillet";
+
+"8_en" = "August";
+"8_fr" = "août";
+
+"9_en" = "September";
+"9_fr" = "septembre";
+
+"10_en" = "October";
+"10_fr" = "octobre";
+
+"11_en" = "November";
+"11_fr" = "novembre";
+
+"12_en" = "December";
+"12_fr" = "décembre";
+
+"employee_approved_en" = "Sent to RH";
+"employee_approved_fr" = "Transmis RH";
+
+"manager_approved_en" = "Manager approved";
+"manager_approved_fr" = "Validé par RH";
+
+"client_approved_en" = "Client approved";
+"client_approved_fr" = "Validé par client";
+
+"client_refused_en" = "Refused by client";
+"client_refused_fr" = "Refusé par client";
+
+"delete_confirmation_en" = "Are you sure? you want to delete?";
+"delete_confirmation_fr" = "Voulez vous supprimer cette absence?";
+
+"yes_en" = "Yes";
+"yes_fr" = "oui";
+
+"no_en" = "No";
+"no_fr" = "Non";
+
+"SUN_fr" =  "DIM";
+"SUN_en" = "SUN";
+"MON_fr" =  "LUN";
+"MON_en" = "MON";
+"TUE_fr" =  "MAR";
+"TUE_en" = "TUE";
+"WED_fr" =  "MER";
+"WED_en" = "WED";
+"THU_fr" =  "JEU";
+"THU_en" = "THU";
+"FRI_fr" =  "VEN";
+"FRI_en" = "FRI";
+"SAT_fr" =  "SAM";
+"SAT_en" = "SAT";
+
+"addsheet_error_en" = "Unable to edit timesheet. Please try again or contact administrator.";
+"addsheet_error_fr" = "Timesheet non modifiable.";

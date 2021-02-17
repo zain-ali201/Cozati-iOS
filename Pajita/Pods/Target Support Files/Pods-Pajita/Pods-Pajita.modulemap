@@ -1,0 +1,6 @@
+framework module Pods_Pajita {
+  umbrella header "Pods-Pajita-umbrella.h"
+
+  export *
+  module * { export * }
+}

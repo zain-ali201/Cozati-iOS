@@ -1,0 +1,384 @@
+
+"Ymb-ao-SMS.text" = "Timesheet";
+
+"ffv-rf-BQE.text" = "Note de frais";
+
+"pna-ls-Too.text" = "Absence";
+
+"vei-0o-NKJ.text" = "Profil";
+
+"eVv-wl-C9z.text" = "Jour travaillé";
+
+"jZt-lz-PQL.text" = "Absence";
+
+"FtS-qt-Yb9.text" = "Maladie";
+
+"VkS-Oa-n0T.normalTitle" = "Annuler";
+
+"Me6-55-veM.normalTitle" = "Soumettre";
+
+"1qW-fE-v8w.normalTitle" = "Soumettre";
+
+"eoG-AF-efP.normalTitle" = "Soumettre";
+
+"Z87-ae-PIf.normalTitle" = "Annuler";
+
+/* Class = "UILabel"; text = "Pending"; ObjectID = "0Rx-z3-mNE"; */
+"0Rx-z3-mNE.text" = "En attente";
+
+/* Class = "UILabel"; text = "RTT: "; ObjectID = "0cG-wx-O9v"; */
+"0cG-wx-O9v.text" = "RTT: ";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "0pR-zh-GAG"; */
+"0pR-zh-GAG.normalTitle" = "Annuler";
+
+/* Class = "UILabel"; text = "0 Euro"; ObjectID = "0we-pE-paK"; */
+"0we-pE-paK.text" = "0 Euro";
+
+/* Class = "UILabel"; text = "Expenses List"; ObjectID = "1Wf-Df-jLq"; */
+"1Wf-Df-jLq.text" = "Notes de frais";
+
+/* Class = "UIViewController"; title = "EditProfileViewController"; ObjectID = "1c9-tf-lIf"; */
+"1c9-tf-lIf.title" = "EditProfileViewController";
+
+/* Class = "UILabel"; text = "November 2019"; ObjectID = "1tf-1V-69l"; */
+"1tf-1V-69l.text" = "";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "1vX-in-wiV"; */
+"1vX-in-wiV.placeholder" = "Mot de passe";
+
+/* Class = "UILabel"; text = "signed_timesheet.pdf"; ObjectID = "2gu-fb-6ta"; */
+"2gu-fb-6ta.text" = "signed_timesheet.pdf";
+
+/* Class = "UILabel"; text = "Normal Leaves:"; ObjectID = "3WA-6W-G0R"; */
+"3WA-6W-G0R.text" = "Congé annuel:";
+
+/* Class = "UILabel"; text = "(+44) 7871 330 1234"; ObjectID = "3fN-Xz-dpC"; */
+"3fN-Xz-dpC.text" = "";
+
+/* Class = "UILabel"; text = "Leaves:"; ObjectID = "4e3-i6-Xtn"; */
+"4e3-i6-Xtn.text" = "Absences:";
+
+/* Class = "UIViewController"; title = "ExpenseCreationVC"; ObjectID = "4eZ-6C-3Y4"; */
+"4eZ-6C-3Y4.title" = "ExpenseCreationVC";
+
+/* Class = "UILabel"; text = "Standtime (unit:hours)"; ObjectID = "5ul-00-1vX"; */
+"5ul-00-1vX.placeholder" = "Astreinte";
+
+/* Class = "UILabel"; text = "Standtime (unit:hours)"; ObjectID = "5ul-00-1vX"; */
+"5ul-00-1vX.text" = "Astreinte";
+
+/* Class = "UITextField"; placeholder = "Mission"; ObjectID = "7RO-B3-y3z"; */
+"7RO-B3-y3z.placeholder" = "Mission";
+
+/* Class = "UILabel"; text = "Leaves/Sickness"; ObjectID = "85D-q8-BWq"; */
+"85D-q8-BWq.text" = "Astreinte";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "8SJ-MH-APr"; */
+"8SJ-MH-APr.text" = "Bienvenue";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "8os-yw-9iC"; */
+"8os-yw-9iC.normalTitle" = "  Ajouter  ";
+
+/* Class = "UILabel"; text = "Mission:"; ObjectID = "0Eg-W4-Qca"; */
+"0Eg-W4-Qca.text" = "Demandée:";
+
+/* Class = "UILabel"; text = "Requested:"; ObjectID = "9Pf-52-AjQ"; */
+"9Pf-52-AjQ.text" = "Validé:";
+
+/* Class = "UILabel"; text = "Valided:"; ObjectID = "Wc6-MI-tcW"; */
+"Wc6-MI-tcW.text" = "Nb note de frais:";
+
+/* Class = "UILabel"; text = "Total Expense:"; ObjectID = "khm-Vz-Rp4"; */
+"khm-Vz-Rp4.text" = "Demandée:";
+
+/* Class = "UILabel"; text = "Total Expense:"; ObjectID = "zoX-14-STd"; */
+"zoX-14-STd.text" = "Validée:";
+
+/* Class = "UILabel"; text = "Allowed Expense: "; ObjectID = "WKB-yp-nSr"; */
+"WKB-yp-nSr.text" = "Nb note de frais:";
+
+/* Class = "UIViewController"; title = "LoginViewController"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "LoginViewController";
+
+/* Class = "UILabel"; text = "Extra Hours Night:"; ObjectID = "Bwj-9e-sD8"; */
+"Bwj-9e-sD8.text" = "Heures supp de nuit:";
+
+/* Class = "UILabel"; text = "October 2019"; ObjectID = "C0j-OJ-YHM"; */
+"C0j-OJ-YHM.text" = "";
+
+/* Class = "UILabel"; text = "Digital Signature"; ObjectID = "CIq-qM-EIT"; */
+"CIq-qM-EIT.text" = "Signature numérique";
+
+/* Class = "UILabel"; text = "Mission: Societe general c005x"; ObjectID = "DKG-UB-vum"; */
+"DKG-UB-vum.text" = "";
+
+/* Class = "UILabel"; text = "Extra Hours Day"; ObjectID = "Djk-vc-MzZ"; */
+"Djk-vc-MzZ.text" = "Heure supp en journée";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "DrL-BS-5tb"; */
+"DrL-BS-5tb.placeholder" = "Mot de passe";
+
+/* Class = "UILabel"; text = "November 2019"; ObjectID = "EX7-fV-eC9"; */
+"EX7-fV-eC9.text" = "";
+
+/* Class = "UIViewController"; title = "EditTimeSheetVC"; ObjectID = "FJI-D3-bab"; */
+"FJI-D3-bab.title" = "EditTimeSheetVC";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "FL7-hc-fMV"; */
+"FL7-hc-fMV.placeholder" = "Description";
+
+/* Class = "UILabel"; text = "Leaves From 12/09/2019 to 12/10/2019 "; ObjectID = "Gvm-fk-XdC"; */
+"Gvm-fk-XdC.text" = "";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "HaN-Dr-Ksu"; */
+"HaN-Dr-Ksu.text" = "0";
+
+/* Class = "UILabel"; text = "01 October"; ObjectID = "IfL-q9-ujF"; */
+"IfL-q9-ujF.text" = "";
+
+/* Class = "UILabel"; text = "05"; ObjectID = "KAZ-Ea-NqZ"; */
+"KAZ-Ea-NqZ.text" = "";
+
+/* Class = "UILabel"; text = "Pending"; ObjectID = "KTG-7s-gsN"; */
+"KTG-7s-gsN.text" = "En attente";
+
+/* Class = "UITextField"; text = "5"; ObjectID = "Kiv-oC-8gR"; */
+"Kiv-oC-8gR.text" = "";
+
+/* Class = "UITextField"; placeholder = "Year"; ObjectID = "LXR-DZ-WXm"; */
+"LXR-DZ-WXm.placeholder" = "Année";
+
+/* Class = "UILabel"; text = "20"; ObjectID = "OPS-Cn-jKc"; */
+"OPS-Cn-jKc.text" = "";
+
+/* Class = "UILabel"; text = "Leaves List"; ObjectID = "PSp-xU-baD"; */
+"PSp-xU-baD.text" = "Liste absences";
+
+/* Class = "UITextField"; placeholder = "Leave type"; ObjectID = "Pt4-VN-To3"; */
+"Pt4-VN-To3.placeholder" = "Type de congé";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "QG2-UF-wm3"; */
+"QG2-UF-wm3.placeholder" = "Téléphone";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "S30-JJ-hCS"; */
+"S30-JJ-hCS.text" = "0";
+
+/* Class = "UILabel"; text = "10 days"; ObjectID = "Skz-MY-iWH"; */
+"Skz-MY-iWH.text" = "";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Sod-H6-vrN"; */
+"Sod-H6-vrN.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "SpC-5o-6jc"; */
+"SpC-5o-6jc.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Sq6-8l-6JN"; */
+"Sq6-8l-6JN.normalTitle" = "Annuler";
+
+/* Class = "UIViewController"; title = "AddTimeSheetVC"; ObjectID = "SqW-Ec-0Xr"; */
+"SqW-Ec-0Xr.title" = "AddTimeSheetVC";
+
+/* Class = "UILabel"; text = "Extra:"; ObjectID = "SyJ-NS-oBg"; */
+"SyJ-NS-oBg.text" = "Autres:";
+
+/* Class = "UIViewController"; title = "SignatureVC"; ObjectID = "U2I-0d-qS1"; */
+"U2I-0d-qS1.title" = "SignatureVC";
+
+/* Class = "UIButton"; normalTitle = "Select Date"; ObjectID = "URK-o0-SeG"; */
+"URK-o0-SeG.normalTitle" = "Sélectionner";
+
+/* Class = "UILabel"; text = "05"; ObjectID = "URr-qj-bub"; */
+"URr-qj-bub.text" = "";
+
+/* Class = "UITextField"; placeholder = "Country"; ObjectID = "UZ2-us-eph"; */
+"UZ2-us-eph.placeholder" = "Pays";
+
+/* Class = "UILabel"; text = "Leaves Declaration"; ObjectID = "UeI-Y4-UoN"; */
+"UeI-Y4-UoN.text" = "Nouvelle demande";
+
+/* Class = "UILabel"; text = "Worked Hours:"; ObjectID = "UmB-mD-GIG"; */
+"UmB-mD-GIG.text" = "Heures travaillées:";
+
+/* Class = "UILabel"; text = "Document Files"; ObjectID = "V3C-Su-vSz"; */
+"V3C-Su-vSz.text" = "Justificatifs";
+
+/* Class = "UILabel"; text = "Extra Hours Day: "; ObjectID = "VYs-Q9-vdS"; */
+"VYs-Q9-vdS.text" = "Heures supp en journée:";
+
+/* Class = "UILabel"; text = "Leave Type:"; ObjectID = "VzX-Tx-vXw"; */
+"VzX-Tx-vXw.text" = "Type de congé:";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "WgG-ke-tWk"; */
+"WgG-ke-tWk.normalTitle" = "Sauvegarder";
+
+/* Class = "UIViewController"; title = "ExpensesListVC"; ObjectID = "WoD-j3-G8J"; */
+"WoD-j3-G8J.title" = "ExpensesListVC";
+
+/* Class = "UILabel"; text = "Extra Hours Night"; ObjectID = "X6E-eY-0Ik"; */
+"X6E-eY-0Ik.text" = "Heure supp de nuit";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "XD2-i1-4PM"; */
+"XD2-i1-4PM.normalTitle" = "Sauvegarder";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "XHk-tr-FDo"; */
+"XHk-tr-FDo.text" = "0";
+
+/* Class = "UILabel"; text = "Patrick Diange"; ObjectID = "YPW-a8-QFD"; */
+"YPW-a8-QFD.text" = "";
+
+/* Class = "UILabel"; text = "Expense Entry"; ObjectID = "ZgW-Ro-7Qb"; */
+"ZgW-Ro-7Qb.text" = "Nouvelle note de frais";
+
+/* Class = "UILabel"; text = "For the Month"; ObjectID = "aXQ-FR-dr3"; */
+"aXQ-FR-dr3.text" = "Détails";
+
+/* Class = "UIButton"; normalTitle = "Forgot password?"; ObjectID = "bHC-Ge-MKs"; */
+"bHC-Ge-MKs.normalTitle" = "mot de passe oublié?";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "c8B-6y-2nu"; */
+"c8B-6y-2nu.placeholder" = "Nom";
+
+/* Class = "UITextField"; placeholder = "End date"; ObjectID = "cNq-6j-Jl2"; */
+"cNq-6j-Jl2.placeholder" = "Date de fin";
+
+/* Class = "UIViewController"; title = "ProfileViewController"; ObjectID = "ddX-G0-sFY"; */
+"ddX-G0-sFY.title" = "ProfileViewController";
+
+/* Class = "UILabel"; text = "Normal"; ObjectID = "dfq-tF-U2L"; */
+"dfq-tF-U2L.text" = "Ordinaire";
+
+/* Class = "UILabel"; text = "Mission: Societe general c005x"; ObjectID = "eXo-zA-ggO"; */
+"eXo-zA-ggO.text" = "";
+
+/* Class = "UILabel"; text = "Worked Days"; ObjectID = "eaP-UU-4ck"; */
+"eaP-UU-4ck.text" = "Heures travaillées";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "foG-fF-npV"; */
+"foG-fF-npV.text" = "0";
+
+/* Class = "UIViewController"; title = "LeavesListVC"; ObjectID = "fz7-b5-Ikz"; */
+"fz7-b5-Ikz.title" = "LeavesListVC";
+
+/* Class = "UIViewController"; title = "TimesheetViewController"; ObjectID = "gHh-FU-Ljd"; */
+"gHh-FU-Ljd.title" = "TimesheetViewController";
+
+/* Class = "UITextField"; placeholder = "Categories"; ObjectID = "gOo-DN-jUp"; */
+"gOo-DN-jUp.placeholder" = "Catégories";
+
+/* Class = "UILabel"; text = "Extra hours day (unit:hours)"; ObjectID = "fDq-x7-ejN"; */
+"fDq-x7-ejN.placeholder" = "Heure supp de nuit";
+
+/* Class = "UILabel"; text = "Extra hours day (unit:hours)"; ObjectID = "fDq-x7-ejN"; */
+"fDq-x7-ejN.text" = "Heure supp de nuit";
+
+/* Class = "UILabel"; text = "Mission: Boring SGBT IFRS9 Mission"; ObjectID = "h05-sV-Ucq"; */
+"h05-sV-Ucq.text" = "";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore aliqua."; ObjectID = "hVN-Yv-QY2"; */
+"hVN-Yv-QY2.text" = "Cozati est votre nouvel assistant développé pour améliorer la productivité de votre entreprise, en vous libérant des tâches chronophages administratives.";
+
+/* Class = "UILabel"; text = "Sickness:"; ObjectID = "hYW-x8-EET"; */
+"hYW-x8-EET.text" = "Maladie:";
+
+/* Class = "UILabel"; text = "pat@gmail.com"; ObjectID = "hkc-sx-mYS"; */
+"hkc-sx-mYS.text" = "";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "hnJ-o5-J8B"; */
+"hnJ-o5-J8B.text" = "0";
+
+/* Class = "UILabel"; text = "Leaves/Sickness:"; ObjectID = "hxf-wi-Ha2"; */
+"hxf-wi-Ha2.text" = "Astreinte:";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "i0A-L8-oIl"; */
+"i0A-L8-oIl.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "idx-Bh-iQ7"; */
+"idx-Bh-iQ7.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "jXA-g6-KS1"; */
+"jXA-g6-KS1.text" = "0";
+
+/* Class = "UIViewController"; title = "LeavesCreationVC"; ObjectID = "kYy-05-ZZK"; */
+"kYy-05-ZZK.title" = "LeavesCreationVC";
+
+/* Class = "UILabel"; text = "0 Euro"; ObjectID = "l77-co-Z8w"; */
+"l77-co-Z8w.text" = "0 Euro";
+
+/* Class = "UILabel"; text = "Workdays:"; ObjectID = "lUD-dN-XFJ"; */
+"lUD-dN-XFJ.text" = "Jour travaillé:";
+
+/* Class = "UILabel"; text = "You can group expense per country"; ObjectID = "lj7-SE-nBJ"; */
+"lj7-SE-nBJ.text" = "";
+
+/* Class = "UITextField"; placeholder = "Total Amount"; ObjectID = "lmK-Gy-Tc2"; */
+"lmK-Gy-Tc2.placeholder" = "Montant total";
+
+/* Class = "UITextField"; placeholder = "Date"; ObjectID = "mj4-NG-AUf"; */
+"mj4-NG-AUf.placeholder" = "Date";
+
+/* Class = "UILabel"; text = "Draft"; ObjectID = "n3w-bg-TKi"; */
+"n3w-bg-TKi.text" = "Brouillon";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "nbI-cT-le5"; */
+"nbI-cT-le5.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Document Files"; ObjectID = "nuD-iP-2Ly"; */
+"nuD-iP-2Ly.text" = "Justificatifs";
+
+/* Class = "UILabel"; text = "Leaves Categories"; ObjectID = "oco-bW-n5f"; */
+"oco-bW-n5f.text" = "Soldes congés";
+
+/* Class = "UITextField"; text = "10"; ObjectID = "p77-Kj-YCt"; */
+"p77-Kj-YCt.text" = "";
+
+/* Class = "UILabel"; text = "Software Architect"; ObjectID = "pc6-pS-ARK"; */
+"pc6-pS-ARK.text" = "";
+
+/* Class = "UILabel"; text = "Document Files"; ObjectID = "pov-Gj-Eo0"; */
+"pov-Gj-Eo0.text" = "Justificatifs";
+
+/* Class = "UILabel"; text = "Timesheet October 2019"; ObjectID = "qWP-aK-c0w"; */
+"qWP-aK-c0w.text" = "";
+
+/* Class = "UIButton"; normalTitle = "Select Date"; ObjectID = "rDY-k1-A96"; */
+"rDY-k1-A96.normalTitle" = "Sélectionner une date";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "rWb-aJ-fNY"; */
+"rWb-aJ-fNY.normalTitle" = "Sauvegarder";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "tJV-9N-tDS"; */
+"tJV-9N-tDS.text" = "";
+
+/* Class = "UILabel"; text = "Extra hours night (unit:hours)"; ObjectID = "tnL-SM-lZB"; */
+"O0T-0X-lDE.placeholder" = "Heure supp en journée";
+
+/* Class = "UILabel"; text = "Extra hours night (unit:hours)"; ObjectID = "tnL-SM-lZB"; */
+"O0T-0X-lDE.text" = "Heure supp en journée";
+
+/* Class = "UILabel"; text = "20"; ObjectID = "tx4-TX-SiT"; */
+"tx4-TX-SiT.text" = "";
+
+/* Class = "UILabel"; text = "Sickness Declaration: "; ObjectID = "ugK-jg-jJK"; */
+"ugK-jg-jJK.text" = "Autres: ";
+
+/* Class = "UILabel"; text = "Timesheet"; ObjectID = "xDI-9c-Unv"; */
+"xDI-9c-Unv.text" = "Timesheet";
+
+/* Class = "UITextField"; placeholder = "Start date"; ObjectID = "xPb-iv-5Mj"; */
+"xPb-iv-5Mj.placeholder" = "Date de début";
+
+/* Class = "UITextView"; text = "Title"; ObjectID = "xXS-Oz-CMz"; */
+"xXS-Oz-CMz.text" = "Titre";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "yqF-VQ-a9l"; */
+"yqF-VQ-a9l.normalTitle" = "Annuler";
+
+/* Class = "UITextField"; placeholder = "Presence (unit:hours)"; ObjectID = "z4k-h7-xMJ"; */
+"tC9-JL-fcF.placeholder" = "Heures travaillées";
+
+/* Class = "UITextField"; placeholder = "Presence (unit:hours)"; ObjectID = "z4k-h7-xMJ"; */
+"tC9-JL-fcF.text" = "Heures travaillées";
+
+/* Class = "UILabel"; text = "Asked Leaves:"; ObjectID = "zp6-DT-LHe"; */
+"zp6-DT-LHe.text" = "Congé annuel:";
