@@ -19,6 +19,7 @@ class LeavesListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     @IBOutlet weak var tblView:UITableView!
     
     var total = 0.0
+    var year = ""
     
     override func viewDidLoad()
     {
@@ -29,7 +30,7 @@ class LeavesListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         formatter.dateFormat = "M"
         let month = formatter.string(from: Date())
         formatter.dateFormat = "yyyy"
-        let year = formatter.string(from: Date())
+        year = formatter.string(from: Date())
         lblDate.text = String(format: "%@ %@ %@", localizeString(text: "balance"), localizeString(text: month), year)
     }
     
@@ -47,25 +48,42 @@ class LeavesListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
 
         if Reachability.isConnectedToNetwork()
         {
-            let URL = backendURL + String(format: "/leave/leave-summary/%d", userDetails?.resourceId ?? 0)
+            let URL = backendURL + String(format: "/leave/balance/%d?year=%@", userDetails?.resourceId ?? 0, year)
             print(URL)
-            Alamofire.request(URL, headers: getHeaders()).responseArray { (response: DataResponse<[LeaveSummaryDTO]>) in
-
+            
+            Alamofire.request(URL, headers: getHeaders()).responseJSON { response in
+                
                 DispatchQueue.main.async {
                     MBProgressHUD.hide(for: self.view, animated: true)
                 }
                 
-                let leaveSummaryDTOArray = response.result.value
-
-                if let leaveSummaryDTOArray = leaveSummaryDTOArray
-                {
-                    if leaveSummaryDTOArray.count > 0
-                    {
-                        self.lblNormal.text = String(format: "%d", leaveSummaryDTOArray[0].totalBalance ?? 0)
-                        self.lblExtra.text = String(format: "%d", leaveSummaryDTOArray[1].totalBalance ?? 0)
-                    }
-                }
+                let dict = response.result.value as? NSDictionary
+                
+                let annualDict = dict?["annual"] as? NSDictionary
+                let otherlDict = dict?["other"] as? NSDictionary
+                
+                self.lblNormal.text = String(format: "%.1f", (annualDict?["totalRemaining"] as? Double) ?? 0)
+                self.lblExtra.text = String(format: "%.1f", (otherlDict?["totalRemaining"] as? Double) ?? 0)
+                
             }
+            
+//            Alamofire.request(URL, headers: getHeaders()).responseArray { (response: DataResponse<[LeaveSummaryDTO]>) in
+//
+//                DispatchQueue.main.async {
+//                    MBProgressHUD.hide(for: self.view, animated: true)
+//                }
+//
+//                let leaveSummaryDTOArray = response.result.value
+//
+//                if let leaveSummaryDTOArray = leaveSummaryDTOArray
+//                {
+//                    if leaveSummaryDTOArray.count > 0
+//                    {
+//                        self.lblNormal.text = String(format: "%d", leaveSummaryDTOArray[0].totalRemaining ?? 0)
+//                        self.lblExtra.text = String(format: "%d", leaveSummaryDTOArray[0].totalExtra ?? 0)
+//                    }
+//                }
+//            }
         }
         else
         {
@@ -74,6 +92,17 @@ class LeavesListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
                 self.view.makeToast(localizeString(text: "internet"))
             }
         }
+    }
+    
+    func convertToDictionary(text: String) -> [String: Any]? {
+        if let data = text.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
     }
     
     func getAllLeaves()

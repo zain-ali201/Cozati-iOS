@@ -162,6 +162,9 @@ class TimesheetListDTO: Mappable
     var statusCode: String?
     var missionName: String?
     var missionId: Int?
+    var totalWorkDays: Double?
+    var totalLeaves: Double?
+    var totalSickness: Double?
     
     required init?(map: Map){
 
@@ -184,6 +187,9 @@ class TimesheetListDTO: Mappable
         statusCode <- map["statusCode"]
         missionId <- map["missionId"]
         missionName <- map["missionName"]
+        totalWorkDays <- map["totalWorked"]
+        totalLeaves <- map["totalLeave"]
+        totalSickness <- map["totalSickness"]
     }
 }
 
@@ -382,7 +388,8 @@ class LeaveDayDTO: Mappable
 class LeaveSummaryDTO: Mappable
 {
     var typeId: Int?
-    var totalRemaining: Int?
+    var totalRemaining: Double?
+    var totalExtra: Double?
     var totalUsed: Int?
     var totalBalance: Int?
     var totalAsked: Int?
@@ -400,6 +407,7 @@ class LeaveSummaryDTO: Mappable
     {
         typeId <- map["typeId"]
         totalRemaining <- map["totalRemaining"]
+        totalExtra <- map["totalExtraLeave"]
         totalUsed <- map["totalUsed"]
         totalBalance <- map["totalBalance"]
         totalAsked <- map["totalAsked"]

@@ -113,7 +113,7 @@ class TimesheetViewController: UIViewController, UITableViewDelegate, UITableVie
                 }
                 
                 let timesheetListDTOArray = response.result.value
-
+                
                 if let timesheetListDTOArray = timesheetListDTOArray
                 {
                     for timesheetListDTO in timesheetListDTOArray
@@ -204,12 +204,12 @@ class TimesheetViewController: UIViewController, UITableViewDelegate, UITableVie
             }
             else if timesheetDTO.statusCode == "timesheet-draft" || timesheetDTO.statusCode == "timesheet-generated"
             {
-              status = localizeString(text: "Draft")
-              color = UIColor(red: 255.0/255.0, green: 207.0/255.0, blue: 56.0/255.0, alpha: 1.0)
+                status = localizeString(text: "Draft")
+                color = UIColor(red: 255.0/255.0, green: 207.0/255.0, blue: 56.0/255.0, alpha: 1.0)
             }
             else if timesheetDTO.statusCode == "timesheet-employee-approved"
             {
-              status = localizeString(text: "employee_approved")
+                status = localizeString(text: "employee_approved")
                 color = UIColor.lightGray
             }
             else if timesheetDTO.statusCode == "timesheet-manager-approved"
@@ -238,14 +238,9 @@ class TimesheetViewController: UIViewController, UITableViewDelegate, UITableVie
             cell.lblYear.text = String(format: "Timesheet %@ %d", localizeString(text: String(format: "%d",timesheetDTO.month!)), timesheetDTO.year ?? "")
             cell.lblMission.text = String(format: "Mission: %@",timesheetDTO.missionName ?? "")
             
-            var presence = 0.0
-            
-            if timesheetDTO.totalPresence != nil
-            {
-                presence = (timesheetDTO.totalPresence ?? 0)/8
-            }
-            
-            cell.lblWorkDays.text = String(format: "%.1f", presence)
+            cell.lblWorkDays.text = String(format: "%.1f", timesheetDTO.totalWorkDays ?? 0)
+            cell.lblLeaves.text = String(format: "%.1f", timesheetDTO.totalLeaves ?? 0)
+            cell.lblSickness.text = String(format: "%.1f", timesheetDTO.totalSickness ?? 0)
             
             return cell
         }

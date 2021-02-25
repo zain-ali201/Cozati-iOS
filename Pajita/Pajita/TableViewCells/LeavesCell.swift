@@ -11,6 +11,17 @@ import UIKit
 class LeavesCell: UITableViewCell
 {
     @IBOutlet weak var lblDate: UILabel!
-    @IBOutlet weak var txtMorning: UITextField!
-    @IBOutlet weak var txtAfternoon: UITextField!
+    @IBOutlet weak var btnMorning: UIButton!
+    @IBOutlet weak var btnAfternoon: UIButton!
+    
+    var morningCheckboxAction: (()->())?
+    var afternoonCheckboxAction: (()->())?
+    
+    @IBAction func morningCheckboxAction(_ sender: Any) {
+        self.morningCheckboxAction?()
+    }
+    
+    @IBAction func afternoongCheckboxAction(_ sender: Any) {
+        self.afternoonCheckboxAction?()
+    }
 }

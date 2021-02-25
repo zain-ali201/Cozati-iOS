@@ -332,8 +332,8 @@ class LeavesCreationVC: UIViewController, UITextFieldDelegate, UITableViewDelega
                 for leaveDayDTO in daysList
                 {
                     let leaveDay:[String: Any]  = [
-                    "afternoonValue": leaveDayDTO.afternoonValue ?? 0,
-                    "date": leaveDayDTO.date ?? "",
+                        "afternoonValue": leaveDayDTO.afternoonValue ?? 0,
+                        "date": leaveDayDTO.date ?? "",
                         "day": leaveDayDTO.day ?? 0,
                         "dayCode": leaveDayDTO.dayCode ?? "",
                         "holyday": leaveDayDTO.holyday ?? false,
@@ -575,14 +575,54 @@ class LeavesCreationVC: UIViewController, UITextFieldDelegate, UITableViewDelega
             let dateStr = formatter.string(from: date!)
             cell.lblDate.text = dateStr
             
-            cell.txtMorning.delegate = self
-            cell.txtAfternoon.delegate = self
+            if (leaveDayDTO.morningValue ?? 0) > 0
+            {
+                cell.btnMorning.setImage(UIImage(named: "check"), for: .normal)
+            }
+            else
+            {
+                cell.btnMorning.setImage(UIImage(named: "uncheck"), for: .normal)
+            }
             
-            cell.txtMorning.text = String(format: "%d", leaveDayDTO.morningValue ?? 0)
-            cell.txtAfternoon.text = String(format: "%d", leaveDayDTO.afternoonValue ?? 0)
+            if (leaveDayDTO.afternoonValue ?? 0) > 0
+            {
+                cell.btnAfternoon.setImage(UIImage(named: "check"), for: .normal)
+            }
+            else
+            {
+                cell.btnAfternoon.setImage(UIImage(named: "uncheck"), for: .normal)
+            }
             
-            cell.txtMorning.tag = 1000 + indexPath.row
-            cell.txtAfternoon.tag = 2000 + indexPath.row
+            cell.morningCheckboxAction = { () in
+                
+                if (leaveDayDTO.morningValue ?? 0) > 0
+                {
+                    cell.btnMorning.setImage(UIImage(named: "uncheck"), for: .normal)
+                    leaveDayDTO.morningValue = 0
+                }
+                else
+                {
+                    cell.btnMorning.setImage(UIImage(named: "check"), for: .normal)
+                    leaveDayDTO.morningValue = 1
+                }
+            }
+            
+            cell.afternoonCheckboxAction = { () in
+                
+                if (leaveDayDTO.afternoonValue ?? 0) > 0
+                {
+                    cell.btnAfternoon.setImage(UIImage(named: "uncheck"), for: .normal)
+                    leaveDayDTO.afternoonValue = 0
+                }
+                else
+                {
+                    cell.btnAfternoon.setImage(UIImage(named: "check"), for: .normal)
+                    leaveDayDTO.afternoonValue = 1
+                }
+            }
+            
+            cell.btnMorning.tag = 1000 + indexPath.row
+            cell.btnAfternoon.tag = 2000 + indexPath.row
             
             return cell
         }

@@ -63,16 +63,16 @@
 "4eZ-6C-3Y4.title" = "ExpenseCreationVC";
 
 /* Class = "UILabel"; text = "Standtime (unit:hours)"; ObjectID = "5ul-00-1vX"; */
-"5ul-00-1vX.placeholder" = "Astreinte";
+"5ul-00-1vX.placeholder" = "Astreintes";
 
 /* Class = "UILabel"; text = "Standtime (unit:hours)"; ObjectID = "5ul-00-1vX"; */
-"5ul-00-1vX.text" = "Astreinte";
+"5ul-00-1vX.text" = "Astreintes";
 
 /* Class = "UITextField"; placeholder = "Mission"; ObjectID = "7RO-B3-y3z"; */
 "7RO-B3-y3z.placeholder" = "Mission";
 
 /* Class = "UILabel"; text = "Leaves/Sickness"; ObjectID = "85D-q8-BWq"; */
-"85D-q8-BWq.text" = "Astreinte";
+"85D-q8-BWq.text" = "Astreintes";
 
 /* Class = "UILabel"; text = "Welcome"; ObjectID = "8SJ-MH-APr"; */
 "8SJ-MH-APr.text" = "Bienvenue";
@@ -114,7 +114,7 @@
 "DKG-UB-vum.text" = "";
 
 /* Class = "UILabel"; text = "Extra Hours Day"; ObjectID = "Djk-vc-MzZ"; */
-"Djk-vc-MzZ.text" = "Heure supp en journée";
+"Djk-vc-MzZ.text" = "Heures supp.Jour";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "DrL-BS-5tb"; */
 "DrL-BS-5tb.placeholder" = "Mot de passe";
@@ -216,7 +216,7 @@
 "WoD-j3-G8J.title" = "ExpensesListVC";
 
 /* Class = "UILabel"; text = "Extra Hours Night"; ObjectID = "X6E-eY-0Ik"; */
-"X6E-eY-0Ik.text" = "Heure supp de nuit";
+"X6E-eY-0Ik.text" = "Heures supp.Nuit";
 
 /* Class = "UIButton"; normalTitle = "Save"; ObjectID = "XD2-i1-4PM"; */
 "XD2-i1-4PM.normalTitle" = "Sauvegarder";
@@ -267,13 +267,13 @@
 "gOo-DN-jUp.placeholder" = "Catégories";
 
 /* Class = "UILabel"; text = "Extra hours day (unit:hours)"; ObjectID = "fDq-x7-ejN"; */
-"fDq-x7-ejN.placeholder" = "Heure supp de nuit";
+"fDq-x7-ejN.placeholder" = "Heures supp.Nuit";
 
 /* Class = "UILabel"; text = "Extra hours day (unit:hours)"; ObjectID = "fDq-x7-ejN"; */
-"fDq-x7-ejN.text" = "Heure supp de nuit";
+"fDq-x7-ejN.text" = "Heures supp.Nuit";
 
 /* Class = "UILabel"; text = "Mission: Boring SGBT IFRS9 Mission"; ObjectID = "h05-sV-Ucq"; */
-"h05-sV-Ucq.text" = "";
+"h05-sV-Ucq.text" = "Mission";
 
 /* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore aliqua."; ObjectID = "hVN-Yv-QY2"; */
 "hVN-Yv-QY2.text" = "Cozati est votre nouvel assistant développé pour améliorer la productivité de votre entreprise, en vous libérant des tâches chronophages administratives.";
@@ -288,7 +288,7 @@
 "hnJ-o5-J8B.text" = "0";
 
 /* Class = "UILabel"; text = "Leaves/Sickness:"; ObjectID = "hxf-wi-Ha2"; */
-"hxf-wi-Ha2.text" = "Astreinte:";
+"hxf-wi-Ha2.text" = "Astreintes:";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "i0A-L8-oIl"; */
 "i0A-L8-oIl.text" = "0";
@@ -351,10 +351,10 @@
 "tJV-9N-tDS.text" = "";
 
 /* Class = "UILabel"; text = "Extra hours night (unit:hours)"; ObjectID = "tnL-SM-lZB"; */
-"O0T-0X-lDE.placeholder" = "Heure supp en journée";
+"O0T-0X-lDE.placeholder" = "Heures supp.Jour";
 
 /* Class = "UILabel"; text = "Extra hours night (unit:hours)"; ObjectID = "tnL-SM-lZB"; */
-"O0T-0X-lDE.text" = "Heure supp en journée";
+"O0T-0X-lDE.text" = "Heures supp.Jour";
 
 /* Class = "UILabel"; text = "20"; ObjectID = "tx4-TX-SiT"; */
 "tx4-TX-SiT.text" = "";

@@ -17,6 +17,7 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var calendarView: UIView!
     
+    @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var lblMission: UILabel!
     @IBOutlet weak var lblWorkedHours: UILabel!
     @IBOutlet weak var lblExtraHoursDay: UILabel!
@@ -33,6 +34,11 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM yyyy"
+        
+        lblDate.text = String(format: "Timesheet %@ %d", localizeString(text: String(format:"%d", timesheetListDTO.month ?? "")), timesheetListDTO.year ?? 0)
         
         if languageCode == "fr"
         {

@@ -23,11 +23,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate
         // Do any additional setup after loading the view.
         
         #if DEBUG
-           // txtEmail.text = "patrick.diagne@nianteo.com"
-           //NtxtPassword.text = "Kiekie123!"
+//        txtEmail.text = "patrick.diagne@nianteo.com"
+//        txtPassword.text = "Kiekie123!"
         
-          txtEmail.text = "baptise.fresnay@cozati.com"
+//        txtEmail.text = "baptise.fresnay@cozati.com"
+//        txtPassword.text = "demo123@"
+        
+        //Production server
+//        txtEmail.text = "online@demo.com"
+//        txtPassword.text = "demo123@"
+        
+        txtEmail.text = "patrick.diagne@nianteo.com"
         txtPassword.text = "demo123@"
+        
         #endif
     }
     
@@ -142,7 +150,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate
     {
         if Reachability.isConnectedToNetwork()
         {
-            let URL = backendURL + "/country/all"
+            let URL = backendURL + "/country/all?mobile=true"
 
             Alamofire.request(URL, headers: getHeaders()).responseArray { (response: DataResponse<[SelectDTO]>) in
                 
