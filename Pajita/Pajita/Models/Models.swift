@@ -257,7 +257,8 @@ class LineDTO: Mappable
     var extraWorkNight: Double?
     var nightShift: Double?
     var disabled: Bool?
-    
+    var leave: Bool?
+    var backgroundColor: String?
     
     required init?(map: Map){
 
@@ -277,6 +278,8 @@ class LineDTO: Mappable
         extraWorkNight <- map["extraWorkNight"]
         nightShift <- map["nightShift"]
         disabled <- map["disabled"]
+        leave <- map["leave"]
+        backgroundColor <- map["backgroundColor"]
     }
 }
 

@@ -308,7 +308,6 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             let lblNights = UILabel()
             lblNights.frame = CGRect(x: 0, y: lblDays.frame.origin.y + lblHours.frame.height, width: dayView.frame.width, height: 10)
             lblNights.backgroundColor = UIColor(red: 223.0/255.0, green: 73.0/255.0, blue: 87.0/255.0, alpha: 1.0)
-//            lblNights.text = "8"
             lblNights.textColor = .white
             lblNights.textAlignment = .center
             lblNights.font = UIFont.systemFont(ofSize: 10.0)
@@ -317,6 +316,21 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
             {
                 dayBtn.addTarget(self, action: #selector(dayBtnAction(_:)), for: .touchUpInside)
                 let lineDTO: LineDTO = timesheetDTO.lineArray[i-1]
+                
+                let disabled = lineDTO.disabled ?? false
+                let leave = lineDTO.leave ?? false
+                let backgroundColor = lineDTO.backgroundColor ?? ""
+                
+                if disabled
+                {
+                    print(backgroundColor)
+                    dayView.backgroundColor = UIColor(hexString: backgroundColor)
+                }
+                else if leave
+                {
+                    print(backgroundColor)
+                    dayView.backgroundColor = UIColor(hexString: backgroundColor)
+                }
                 
                 if lineDTO.extraWorkNight != nil && lineDTO.extraWorkNight! > 0.0
                 {
@@ -378,15 +392,15 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         {
             let lineDTO = timesheetDTO.lineArray[button.tag - 1001]
                     
-            let holiday = lineDTO.holiday ?? false
-            let weekend = lineDTO.weekend ?? false
+            let disabled = lineDTO.disabled ?? false
+            let leave = lineDTO.leave ?? false
             
-    //        if weekend || holiday
-    //        {
-    //            self.view.makeToast(localizeString(text:"holiday"))
-    //        }
-    //        else
-    //        {
+            if disabled || leave
+            {
+                self.view.makeToast(localizeString(text:"holiday"))
+            }
+            else
+            {
                 let addVC = UIStoryboard.main.instantiateViewController(withIdentifier: "AddTimeSheetVC") as! AddTimeSheetVC
                 addVC.lineDTO = lineDTO
                 addVC.day = button.tag - 1000
@@ -394,7 +408,11 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                 addVC.year = timesheetDTO.year ?? 0
                 addVC.editTimesheetVC = self
                 self.present(addVC, animated: true, completion: nil)
-    //        }
+            }
+        }
+        else
+        {
+            print("not draft")
         }
     }
 
@@ -460,5 +478,34 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
 
+    }
+}
+
+extension UIColor {
+    convenience init(hexString: String, alpha: CGFloat = 1.0) {
+        let hexString: String = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        let scanner = Scanner(string: hexString)
+        if (hexString.hasPrefix("#")) {
+            scanner.scanLocation = 1
+        }
+        var color: UInt32 = 0
+        scanner.scanHexInt32(&color)
+        let mask = 0x000000FF
+        let r = Int(color >> 16) & mask
+        let g = Int(color >> 8) & mask
+        let b = Int(color) & mask
+        let red   = CGFloat(r) / 255.0
+        let green = CGFloat(g) / 255.0
+        let blue  = CGFloat(b) / 255.0
+        self.init(red:red, green:green, blue:blue, alpha:alpha)
+    }
+    func toHexString() -> String {
+        var r:CGFloat = 0
+        var g:CGFloat = 0
+        var b:CGFloat = 0
+        var a:CGFloat = 0
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+        let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
+        return String(format:"#%06x", rgb)
     }
 }

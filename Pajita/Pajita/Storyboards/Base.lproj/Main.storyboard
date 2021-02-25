@@ -255,7 +255,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timesheets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymb-ao-SMS">
-                                                <rect key="frame" x="66.5" y="132" width="91.5" height="20"/>
+                                                <rect key="frame" x="68.5" y="132" width="87.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Medium" family="SF Compact Text" pointSize="17"/>
                                                 <color key="textColor" red="0.12549019607843137" green="0.1764705882352941" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -270,7 +270,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffv-rf-BQE">
-                                                <rect key="frame" x="225" y="132" width="75.5" height="20"/>
+                                                <rect key="frame" x="226" y="132" width="74" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Medium" family="SF Compact Text" pointSize="17"/>
                                                 <color key="textColor" red="0.12549019610000001" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -306,7 +306,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vei-0o-NKJ">
-                                                <rect key="frame" x="236.5" y="272" width="52.5" height="20"/>
+                                                <rect key="frame" x="239" y="272" width="48" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFCompactText-Medium" family="SF Compact Text" pointSize="17"/>
                                                 <color key="textColor" red="0.12549019610000001" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2727,6 +2727,7 @@
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01 October" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IfL-q9-ujF">
                                                                                             <rect key="frame" x="0.0" y="13" width="116" height="23"/>
                                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
                                                                                             <color key="textColor" red="0.12549019610000001" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                                                             <nil key="highlightedColor"/>

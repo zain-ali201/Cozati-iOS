@@ -150,7 +150,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate
     {
         if Reachability.isConnectedToNetwork()
         {
-            let URL = backendURL + "/country/all?mobile=true"
+            let URL = backendURL + "/country/short?mobile=true"
 
             Alamofire.request(URL, headers: getHeaders()).responseArray { (response: DataResponse<[SelectDTO]>) in
                 

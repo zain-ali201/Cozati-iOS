@@ -110,6 +110,10 @@ class ExpensesListVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                         self.lblNBExpense.text = String(format: "%.2f", expenseDTO.totalExpense ?? 0)
 //                        }
                     }
+                    
+                    expenseList = expenseList.sorted(by:  {
+                        $0.month! > $1.month! && ($0.year! > $1.year! || $0.year! == $1.year!)
+                    })
 
                     self.tblView.reloadData()
                 }
