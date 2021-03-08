@@ -20,18 +20,20 @@ class LeavesListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     var total = 0.0
     var year = ""
+    var currentMonth = ""
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "M"
-        let month = formatter.string(from: Date())
-        formatter.dateFormat = "yyyy"
-        year = formatter.string(from: Date())
-        lblDate.text = String(format: "%@ %@ %@", localizeString(text: "balance"), localizeString(text: month), year)
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "M"
+//        currentMonth = formatter.string(from: Date())
+//        formatter.dateFormat = "yyyy"
+//        year = formatter.string(from: Date())
+//        lblDate.text = String(format: "%@ %@ %@", localizeString(text: "balance"), localizeString(text: currentMonth), year)
+        lblDate.text = String(format: "%@", localizeString(text: "balance"))
     }
     
     override func viewWillAppear(_ animated: Bool)
@@ -48,7 +50,7 @@ class LeavesListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
 
         if Reachability.isConnectedToNetwork()
         {
-            let URL = backendURL + String(format: "/leave/balance/%d?year=%@", userDetails?.resourceId ?? 0, year)
+            let URL = backendURL + String(format: "/leave/balance/%d?year=%@", userDetails?.resourceId ?? 0, year, currentMonth)
             print(URL)
             
             Alamofire.request(URL, headers: getHeaders()).responseJSON { response in
@@ -58,32 +60,14 @@ class LeavesListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
                 }
                 
                 let dict = response.result.value as? NSDictionary
+                print(dict)
+                let annual = dict?["annualLeave"] as? Double
+                let recovery = dict?["recoveryLeave"] as? Double
                 
-                let annualDict = dict?["annual"] as? NSDictionary
-                let otherlDict = dict?["other"] as? NSDictionary
-                
-                self.lblNormal.text = String(format: "%.1f", (annualDict?["totalRemaining"] as? Double) ?? 0)
-                self.lblExtra.text = String(format: "%.1f", (otherlDict?["totalRemaining"] as? Double) ?? 0)
+                self.lblNormal.text = String(format: "%.1f", annual ?? 0)
+                self.lblExtra.text = String(format: "%.1f", recovery ?? 0)
                 
             }
-            
-//            Alamofire.request(URL, headers: getHeaders()).responseArray { (response: DataResponse<[LeaveSummaryDTO]>) in
-//
-//                DispatchQueue.main.async {
-//                    MBProgressHUD.hide(for: self.view, animated: true)
-//                }
-//
-//                let leaveSummaryDTOArray = response.result.value
-//
-//                if let leaveSummaryDTOArray = leaveSummaryDTOArray
-//                {
-//                    if leaveSummaryDTOArray.count > 0
-//                    {
-//                        self.lblNormal.text = String(format: "%d", leaveSummaryDTOArray[0].totalRemaining ?? 0)
-//                        self.lblExtra.text = String(format: "%d", leaveSummaryDTOArray[0].totalExtra ?? 0)
-//                    }
-//                }
-//            }
         }
         else
         {
@@ -153,8 +137,14 @@ class LeavesListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
                             }
                         }
                         
+                        leaveDTO.sDate = startDate
+                        leaveDTO.eDate = endDate
+                        
                         leaveList.append(leaveDTO)
-                        leaveList = leaveList.sorted(by: { $0.leaveId! > $1.leaveId! })
+//                        leaveList = leaveList.sorted(by: { $0.leaveId! > $1.leaveId! })
+                        leaveList = leaveList.sorted(by:  {
+                            ($0.sDate! > $1.sDate! || $0.sDate! == $1.sDate!)
+                        })
                     }
                     self.tblView.reloadData()
                 }

@@ -34,7 +34,7 @@ class TimesheetViewController: UIViewController, UITableViewDelegate, UITableVie
         currentYear = formatter.string(from: Date())
         formatter.dateFormat = "M"
         currentMonth = Int(formatter.string(from: Date())) ?? 0
-        
+        print("Month: \(currentMonth)")
         lblDate.text = String(format: "%@ %@", localizeString(text: formatter.string(from: Date())), currentYear)
     }
     
@@ -59,7 +59,7 @@ class TimesheetViewController: UIViewController, UITableViewDelegate, UITableVie
 
         if Reachability.isConnectedToNetwork()
         {
-            let URL = backendURL + String(format: "/timesheet/summary/%d?month=%d&resourceId=%d&year=%@", userDetails?.resourceId ?? 0, currentMonth, userDetails?.resourceId ?? 0,currentYear)
+            let URL = backendURL + String(format: "/timesheet/summary/%d?month=%d&year=%@", userDetails?.resourceId ?? 0, currentMonth,currentYear)
             print(URL)
             Alamofire.request(URL, headers: getHeaders()).responseObject { (response: DataResponse<TimesheetSummary>) in
 
@@ -81,7 +81,7 @@ class TimesheetViewController: UIViewController, UITableViewDelegate, UITableVie
                 
                 if timesheetSummary?.totalWorked != nil
                 {
-                      self.lblWorkdays.textColor=UIColor.blue;
+                    self.lblWorkdays.textColor=UIColor.blue;
                     self.lblWorkdays.text = String(format: "%.01f", timesheetSummary?.totalWorked ?? "0")
                 }
                
@@ -121,7 +121,7 @@ class TimesheetViewController: UIViewController, UITableViewDelegate, UITableVie
                         self.timesheetList.append(timesheetListDTO)
                     }
                     self.timesheetList = self.timesheetList.sorted(by:  {
-                        $0.month! > $1.month! && ($0.year! > $1.year! || $0.year! == $1.year!)
+                        ($0.month! > $1.month! || $0.month! == $1.month!) && ($0.year! > $1.year! || $0.year! == $1.year!)
                     })
                     self.tblView.reloadData()
                 }

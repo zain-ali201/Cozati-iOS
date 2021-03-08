@@ -60,7 +60,7 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         if timesheetListDTO.totalPresence != nil
         {
-            presence = (timesheetListDTO.totalPresence ?? 0)/8
+            presence = (timesheetListDTO.totalPresence ?? 0)
         }
         
         lblWorkedHours.text = String(format: "%.1f", presence)
@@ -117,7 +117,7 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                     
                     if presence > 0
                     {
-                        totalPresence = presence/8
+                        totalPresence = presence
                     }
                     
                     self.lblWorkedHours.text = String(format: "%.1f", totalPresence)
@@ -319,18 +319,17 @@ class EditTimeSheetVC: UIViewController, UITableViewDelegate, UITableViewDataSou
                 
                 let disabled = lineDTO.disabled ?? false
                 let leave = lineDTO.leave ?? false
-                let backgroundColor = lineDTO.backgroundColor ?? ""
+//                let backgroundColor = lineDTO.backgroundColor ?? ""
                 
-                if disabled
+                if disabled || leave
                 {
-                    print(backgroundColor)
-                    dayView.backgroundColor = UIColor(hexString: backgroundColor)
+                    dayView.backgroundColor = .lightGray
+//                    dayView.backgroundColor = UIColor(hexString: backgroundColor)
                 }
-                else if leave
-                {
-                    print(backgroundColor)
-                    dayView.backgroundColor = UIColor(hexString: backgroundColor)
-                }
+//                else if leave
+//                {
+//                    dayView.backgroundColor = UIColor(hexString: backgroundColor)
+//                }
                 
                 if lineDTO.extraWorkNight != nil && lineDTO.extraWorkNight! > 0.0
                 {

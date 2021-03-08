@@ -356,7 +356,7 @@ class LeavesCreationVC: UIViewController, UITextFieldDelegate, UITableViewDelega
                     "total": totalLeaves+1,
                     "typeId": leaveTypeID,
                     "year": year,
-                    "fileData": strBase64.isEmpty ? nil : strBase64]
+                    "fileData": strBase64.isEmpty ? "" : strBase64]
                 
                 print(parameters)
                 

@@ -331,6 +331,8 @@ class LeaveDTO: Mappable
     var typeId: String?
     var title: String?
     var total: Double?
+    var sDate: Date?
+    var eDate: Date?
     
     
     required init?(map: Map){

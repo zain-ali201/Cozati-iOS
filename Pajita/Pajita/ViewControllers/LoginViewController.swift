@@ -36,6 +36,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate
         txtEmail.text = "patrick.diagne@nianteo.com"
         txtPassword.text = "demo123@"
         
+//        txtEmail.text = "robert.philippe1985@gmail.com"
+//        txtPassword.text = "Robert123@"
+        
         #endif
     }
     

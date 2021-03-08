@@ -112,7 +112,11 @@ class ExpensesListVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                     
                     expenseList = expenseList.sorted(by:  {
-                        $0.month! > $1.month! && ($0.year! > $1.year! || $0.year! == $1.year!)
+                        return ($0.month! > $1.month! || $0.month! == $1.month!) && ($0.year! > $1.year!)
+                    })
+                    
+                    expenseList = expenseList.sorted(by:  {
+                        return ($0.year! > $1.year!)
                     })
 
                     self.tblView.reloadData()

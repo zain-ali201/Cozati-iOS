@@ -100,10 +100,10 @@
 "expense_added_fr" = "Dépense ajoutée avec succès.";
 
 "Annual_Leave_en" = "Annual Leave";
-"Annual_Leave_fr" = "Congé annuel";
+"Annual_Leave_fr" = "Solde congé annuel";
 
 "annual_leave_en" = "Annual Leave";
-"annual_leave_fr" = "Congé annuel";
+"annual_leave_fr" = "Solde congé annuel";
 
 "Extra_Leave_en" = "Extra Leave";
 "Extra_Leave_fr" = "Congé extraordinaire";
@@ -112,10 +112,10 @@
 "extra_leave_fr" = "Congé extraordinaire";
 
 "Sickness_Leave_en" = "Sickness Leave";
-"Sickness_Leave_fr" = "Absence de maladie";
+"Sickness_Leave_fr" = "Arrêt maladie";
 
 "sickness_leave_en" = "Sickness Leave";
-"sickness_leave_fr" = "Absence de maladie";
+"sickness_leave_fr" = "absence de maladie";
 
 "familial_leave_en" = "Familial Leave";
 "familial_leave_fr" = "Congé pour raisons familiales";
@@ -124,25 +124,31 @@
 "formation_leave_fr" = "Formation";
 
 "parental_leave_en" = "Parental Leave";
-"parental_leave_fr" = "Absence parental";
+"parental_leave_fr" = "absence parental";
 
 "maternal_leave_en" = "Maternal Leave";
 "maternal_leave_fr" = "Congé maternité";
 
 "exceptional_leave_en" = "Exceptional leave";
-"exceptional_leave_fr" = "Absence exceptionnelle";
+"exceptional_leave_fr" = "absence exceptionnelle";
 
 "following_leave_en" = "Following Leave";
-"following_leave_fr" = "Après le absence";
+"following_leave_fr" = "après le absence";
 
 "individual_leave_en" = "Individual Leave";
-"individual_leave_fr" = "Absence individuel";
+"individual_leave_fr" = "absence individuel";
 
 "free_leave_en" = "Free Leave";
 "free_leave_fr" = "Congé individuel de formation";
 
 "welcome_leave_en" = "Welcome Leave";
 "welcome_leave_fr" = "Congé d’accueil";
+
+"welcome_leave_en" = "Welcome Leave";
+"welcome_leave_fr" = "Congé d’accueil";
+
+"recovery_leave_en" = "Recovery Leave";
+"recovery_leave_fr" = "Congé sans solde";
 
 
 "start_first_en" = "Please select start date first.";

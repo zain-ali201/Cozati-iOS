@@ -11,6 +11,8 @@ import Foundation
 //Production Server
 var authURL = "https://auth.cozati.com"
 var backendURL = "https://secure.cozati.com"
+//Ptrick local PC 
+//var backendURL = "http://45e9dfe2a726.ngrok.io"
 
 //Dev Server
 //var authURL = "https://pajita-dev-oauth.nianteo.com"

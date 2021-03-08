@@ -51,7 +51,7 @@
 "2gu-fb-6ta.text" = "signed_timesheet.pdf";
 
 /* Class = "UILabel"; text = "Normal Leaves:"; ObjectID = "3WA-6W-G0R"; */
-"3WA-6W-G0R.text" = "Congé annuel:";
+"3WA-6W-G0R.text" = "Solde congé annuel:";
 
 /* Class = "UILabel"; text = "(+44) 7871 330 1234"; ObjectID = "3fN-Xz-dpC"; */
 "3fN-Xz-dpC.text" = "";
@@ -180,7 +180,7 @@
 "SqW-Ec-0Xr.title" = "AddTimeSheetVC";
 
 /* Class = "UILabel"; text = "Extra:"; ObjectID = "SyJ-NS-oBg"; */
-"SyJ-NS-oBg.text" = "Autres:";
+"SyJ-NS-oBg.text" = "Récupération jour férié:";
 
 /* Class = "UIViewController"; title = "SignatureVC"; ObjectID = "U2I-0d-qS1"; */
 "U2I-0d-qS1.title" = "SignatureVC";
@@ -360,7 +360,7 @@
 "tx4-TX-SiT.text" = "";
 
 /* Class = "UILabel"; text = "Sickness Declaration: "; ObjectID = "ugK-jg-jJK"; */
-"ugK-jg-jJK.text" = "Autres: ";
+"ugK-jg-jJK.text" = "Récupération jour férié: ";
 
 /* Class = "UILabel"; text = "Timesheet"; ObjectID = "xDI-9c-Unv"; */
 "xDI-9c-Unv.text" = "Timesheet";
@@ -381,4 +381,4 @@
 "tC9-JL-fcF.text" = "Heures travaillées";
 
 /* Class = "UILabel"; text = "Asked Leaves:"; ObjectID = "zp6-DT-LHe"; */
-"zp6-DT-LHe.text" = "Congé annuel:";
+"zp6-DT-LHe.text" = "Solde congé annuel:";
